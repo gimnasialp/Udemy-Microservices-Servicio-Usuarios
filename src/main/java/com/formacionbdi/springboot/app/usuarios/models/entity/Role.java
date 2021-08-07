@@ -1,12 +1,8 @@
 package com.formacionbdi.springboot.app.usuarios.models.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import java.util.List;
 
 
 @Entity
@@ -20,6 +16,9 @@ public class Role implements Serializable {
 
     @Column(unique = true, length = 30)
     private String nombre;
+
+  //  @ManyToMany(fetch = FetchType.LAZY , mappedBy= "roles")
+ //   private List<Usuario> usuarios;
 
     public Long getId() {
         return id;
