@@ -1,10 +1,8 @@
-package com.formacionbdi.springboot.app.usuarios.models.entity;
-
-import java.io.Serializable;
-import java.util.List;
+package com.formacionbdi.springboot.app.commons.usuarios.models.entity;
 
 import javax.persistence.*;
-import javax.persistence.Entity;
+import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Table(name = "usuarios")
